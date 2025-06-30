@@ -1,0 +1,17 @@
+
+.home{
+    display: flex;
+
+    .homeContainer{
+        flex: 6;
+
+        .widget-cont,
+        .fnc{
+            display: flex;
+            padding: 1em;
+            justify-content: space-between;
+            gap: 1rem;
+           
+        }
+    }
+}

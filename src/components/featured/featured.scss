@@ -1,0 +1,30 @@
+
+
+.featured-cont{
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+     -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+    box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+    justify-content: space-between;
+    padding: .8em;
+
+    .top{
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    .bottom{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .featuredChart{
+            width: 7rem;
+            height: 7rem;
+            padding: 2em;
+        }
+    }
+}
