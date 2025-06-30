@@ -2,7 +2,6 @@
 
 import React from "react";
 import './charts.scss'
-import { MoreVert } from "@mui/icons-material";
 
 function Charts(){
     return(

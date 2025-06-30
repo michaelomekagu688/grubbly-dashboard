@@ -3,7 +3,6 @@
 import React from "react"
 import './widget.scss'
 import { AccountBalanceWalletOutlined, KeyboardArrowUp, MonetizationOnOutlined, PermIdentityOutlined, ShoppingCartOutlined } from "@mui/icons-material"
-import { caES } from "@mui/material/locale";
 
 
 function Widget( {type} ){

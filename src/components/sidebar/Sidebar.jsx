@@ -1,7 +1,7 @@
 
 
 import React from 'react'
-import { AccountCircleTwoTone, AirportShuttle, Dashboard, ExitToAppOutlined, HealthAndSafetyOutlined, LocalMoviesSharp, NotificationsNoneOutlined, Payment, PermIdentity, ProductionQuantityLimits, PsychologyAltOutlined, QueryStats, QueryStatsOutlined, SettingsOutlined } from '@mui/icons-material';
+import { AccountCircleTwoTone, AirportShuttle, Dashboard, ExitToAppOutlined, HealthAndSafetyOutlined, NotificationsNoneOutlined, Payment, PermIdentity, ProductionQuantityLimits, PsychologyAltOutlined, QueryStatsOutlined, SettingsOutlined } from '@mui/icons-material';
 import './sidebar.scss'
 
 
