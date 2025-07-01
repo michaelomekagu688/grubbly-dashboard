@@ -13,6 +13,11 @@
         display: flex;
         justify-content: space-between;
         width: 100%;
+        color: rgb(132, 128, 128);
+
+        .top-text{
+            font-weight: 400;
+        }
     }
 
     .bottom{
@@ -20,11 +25,66 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1.2rem;
+
+        .target-cont{
+            display: flex;
+            gap: 1rem;
+            margin-bottom: 1em;
+            padding: 0 1em;
+
+            .targets-div{
+               display: flex;
+               flex-direction: column;
+               gap: .5rem;
+               justify-content: space-between;
+               align-items: center;
+    
+               .targets-tp{
+                   color: rgb(132, 128, 128);
+                   font-weight: 500;
+               }
+    
+               .targets-dwn{
+                   display: flex;
+                   font-weight: 600;
+              
+               }
+
+                
+                .negative{
+                    color: red;
+                }
+
+                .positive{
+                    color: green;
+                }
+           }
+
+        }
+
+
+        .total-text{
+            color: rgb(132, 128, 128);
+            font-size: 1.2rem;
+            font-weight: 600;
+        }
+
+        span{
+            font-size: 2rem;
+        }
+        :nth-child(4){
+            color: rgb(132, 128, 128);
+            text-align: center;
+            font-size: 1rem;
+
+        }
 
         .featuredChart{
             width: 7rem;
             height: 7rem;
             padding: 2em;
         }
+
     }
 }
