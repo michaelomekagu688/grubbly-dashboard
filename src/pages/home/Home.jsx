@@ -7,6 +7,7 @@ import Navbar from '../../components/navbar/Navbar'
 import Widget from '../../components/widgets/widget'
 import Featured from '../../components/featured/Featured'
 import Charts from '../../components/charts/Charts'
+import Tables from '../../components/table/Tables'
 
 
 function Home(){
@@ -24,6 +25,9 @@ function Home(){
                 <div className='fnc'> 
                     <Featured />
                     <Charts />
+                </div>
+                <div className='table-cont'>
+                    <Tables />
                 </div>
             </div>
         </div>
