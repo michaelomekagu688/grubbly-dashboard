@@ -6,6 +6,7 @@ import Single from './pages/single/Single'
 
 
 import { BrowserRouter, Routes, Route } from "react-router-dom";
+import Users from './pages/users/Users';
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
             <Route path='login' element={<Login />} />
             <Route path='single' element={<Single />} />
             <Route path='new' element={<New />} />
+            <Route path='users' element={<Users />} />
           </Route>
         </Routes>
       </BrowserRouter>

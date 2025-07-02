@@ -16,13 +16,13 @@ function Tables(){
     
     
     function createData(
-      name: string,
-      calories: number,
-      fat: number,
-      carbs: number,
-      protein: number,
-      methods: string,
-      status: string,
+      name,
+      calories,
+      fat,
+      carbs,
+      protein,
+      methods,
+      status,
     ) {
       return { name, calories, fat, carbs, protein, methods, status };
     }
