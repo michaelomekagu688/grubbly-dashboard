@@ -8,11 +8,12 @@
         .first-cont{
             display: flex;
             flex-direction: column;
+            height: 100vh;
 
 
             .top{
                 display: flex;
-                flex: 1;
+                height: 40%;
 
                 .left{
                     display: flex;
@@ -20,9 +21,10 @@
                     flex: 1;
                      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-                    padding: 3em;
-                    gap:3.5rem;
+                    padding: 1.5em 3em;
+                    justify-content: space-between;
                     margin: 1em 2em;
+                    gap: 1rem;
 
                     .inner-top{
                         display: flex;
@@ -41,7 +43,7 @@
                               border-radius: 0 0 0 .6rem;
                               font-weight: 600;
                               padding: .5em;
-                              top: -3rem;
+                              top: -1.5rem;
                               right: -3rem;
                               background-color: rgba(240, 128, 128, 0.135);
                         }
@@ -59,7 +61,7 @@
                             flex-direction: column;
                             
                             h2{
-                                font-size: 4rem;
+                                font-size: 2rem;
                             }
                             
                             div{
@@ -70,7 +72,7 @@
                         }
     
                         .beauty-img{
-                            height: 10rem;
+                            height: 5rem;
                             width: auto;
                             border-radius: 50%;
                         }
@@ -91,7 +93,7 @@
             }
 
             .bottom{
-                flex: 3;
+                height: 60%;
                 -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                 box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
                 justify-content: space-between;
