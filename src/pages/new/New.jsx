@@ -13,15 +13,22 @@ const rows = [
   { id: 2, lastName: 'Lannister', firstName: 'Cersei',  Email: "1snow@gmail.com", age: 42,Status: "active" },
   { id: 3, lastName: 'Lannister', firstName: 'Jaime',  Email: "2snow@gmail.com", age: 45, Status: "pasive" },
   { id: 4, lastName: 'Stark', firstName: 'Arya',  Email: "3snow@gmail.com", age: 16, Status: "pending" },
-  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys',  Email: "4snow@gmail.com", age: null, Status: "active" },
-  { id: 6, lastName: 'Melisandre', firstName: null,  Email: "5snow@gmail.com", age: 150, Status: "passive",  },
-  { id: 7, lastName: 'Clifford', firstName: 'Ferrara',  Email: "6snow@gmail.com", age: 44, Status: "pending" },
-  { id: 8, lastName: 'Frances', firstName: 'Rossini',  Email: "7snow@gmail.com", age: 36, Status: "active" },
-  { id: 9, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
+  { id: 5, lastName: 'Targaryen', firstName: 'Daenerys',  Email: "4snow@gmail.com", age: 45, Status: "active" },
+  { id: 6, lastName: 'Targaryen', firstName: 'Daenerys',  Email: "4snow@gmail.com", age: 25, Status: "active" },
+  { id: 7, lastName: 'Targaryen', firstName: 'Daenerys',  Email: "4snow@gmail.com", age: 78, Status: "active" },
+  { id: 8, lastName: 'Targaryen', firstName: 'Daenerys',  Email: "4snow@gmail.com", age: 43, Status: "active" },
+  { id: 9, lastName: 'Melisandre', firstName: null,  Email: "5snow@gmail.com", age: 150, Status: "passive",  },
+  { id: 10, lastName: 'Clifford', firstName: 'Ferrara',  Email: "6snow@gmail.com", age: 44, Status: "pending" },
+  { id: 11, lastName: 'Frances', firstName: 'Rossini',  Email: "7snow@gmail.com", age: 36, Status: "active" },
+  { id: 12, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
+  { id: 13, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
+  { id: 14, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
+  { id: 15, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
+  { id: 16, lastName: 'Roxie', firstName: 'Harvey',  Email: "8snow@gmail.com", age: 65, Status: "active" },
 ];
 
 const columns  = [
-  { field: 'id', headerName: 'ID', width: 70 },
+  { field: 'id', headerName: 'ID', width: 50},
   {
     field: 'User',
     headerName: 'Full name',
@@ -40,21 +47,36 @@ const columns  = [
         )
     }
   },
-  { field: 'Email', headerName: 'Email', width: 250 },
-  { field: 'age', headerName: 'Age', width: 130 },
+  { field: 'Email', headerName: 'Email', width: 200 },
+  { field: 'age', headerName: 'Age', width: 50 },
   {
     field: 'Status',
     headerName: 'Status',
-    width: 90,
-     renderCell: (params) => {
+    width: 80,
+     renderCell: (evs) => {
         return(
-            <div> {params.row.Status} </div>
+            <div className="ics-wrapper">
+                <div className={ `ics ${evs.row.Status}`}> {evs.row.Status} </div>
+            </div>
+        )
+    }
+  },
+  {
+    field: 'Extra',
+    headerName: 'Extra',
+    width: 200,
+     renderCell: (extra) => {
+        return(
+            <div className="extra-wrapper">
+                <div className="view"> View </div>
+                <div className="delete"> Delete </div>
+            </div>
         )
     }
   },
 ];
 
-const paginationModel = { page: 0, pageSize: 5 };
+const paginationModel = { page: 0, pageSize: 12 };
 
 
 
@@ -68,7 +90,7 @@ function Login(){
             <div className="new-cont">
                 <Navbar/>
                 <div className="id-sec"> 
-                     <Paper sx={{ height: 400, }}>
+                     <Paper sx={{ height: 800, }}>
                         <DataGrid
                             rows={rows}
                             columns={columns}

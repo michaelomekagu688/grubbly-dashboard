@@ -6,39 +6,75 @@
         flex: 6;
 
         .first-cont{
+            display: flex;
+            flex-direction: column;
 
 
             .top{
                 display: flex;
+                flex: 1;
 
                 .left{
                     display: flex;
+                    flex-direction: column;
                     flex: 1;
                      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-                    padding: 1em;
-                    gap:.6rem;
-                    margin: 1em;
+                    padding: 3em;
+                    gap:3.5rem;
+                    margin: 1em 2em;
 
-                    .inners{
+                    .inner-top{
                         display: flex;
-                        flex-direction: column;
+                        align-items: center;
+                        position: relative;
                         
-                        h2{
-                            font-size: 2rem;
-                        }
-                        
-                        div{
-                            font-size: 1rem;
-                            color: rgb(132, 128, 128);
 
+                        .info{
+                              color: rgb(132, 128, 128);
+                              font-size: 1.1rem;
+                        }
+
+                        .edit{
+                              color: lightcoral;
+                              position: absolute;
+                              border-radius: 0 0 0 .6rem;
+                              font-weight: 600;
+                              padding: .5em;
+                              top: -3rem;
+                              right: -3rem;
+                              background-color: rgba(240, 128, 128, 0.135);
                         }
                     }
 
-                    .beauty-img{
-                        height: 6rem;
-                        border-radius: 50%;
-                        object-fit: cover;
+
+                    .inner-bottom{
+                        display: flex;
+                        width: 100%;
+                        justify-content: space-between;
+
+                        .inners{
+                            display: flex;
+                            gap: 1.1rem;
+                            flex-direction: column;
+                            
+                            h2{
+                                font-size: 4rem;
+                            }
+                            
+                            div{
+                                font-size: 1rem;
+                                color: rgb(132, 128, 128);
+    
+                            }
+                        }
+    
+                        .beauty-img{
+                            height: 10rem;
+                            width: auto;
+                            border-radius: 50%;
+                        }
+
                     }
                 }
 
@@ -52,6 +88,15 @@
                     margin: 1em;
                 }
 
+            }
+
+            .bottom{
+                flex: 3;
+                -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
+                box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
+                justify-content: space-between;
+                padding: .8em;
+                margin: 1em;
             }
 
         }

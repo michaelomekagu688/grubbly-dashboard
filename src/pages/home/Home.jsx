@@ -24,7 +24,7 @@ function Home(){
                 </div>
                 <div className='fnc'> 
                     <Featured />
-                    <Charts />
+                    <Charts aspect={2/1} />
                 </div>
                 <div className='table-cont'>
                     <Tables />
