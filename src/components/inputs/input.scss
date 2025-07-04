@@ -1,0 +1,27 @@
+
+
+    .inner-right{
+
+        display: flex;
+        flex-direction: column;
+        width: 35%;
+        margin: 1em 2em;
+    
+
+
+        label{
+            color: rgba(0, 0, 0, 0.5);
+            font-weight: 700;
+            margin-bottom: .5em;
+        }
+
+        input{
+            color: rgba(211, 211, 211, 0.678);
+            font-weight: 600;
+            width: 100%;
+            border: none;
+            padding-bottom: .4em;
+            border-bottom: 2px solid rgba(211, 211, 211, 0.65);
+        }
+
+    }

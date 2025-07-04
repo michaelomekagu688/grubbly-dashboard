@@ -52,31 +52,29 @@
                     .right{
                         flex: 2;
                         display: flex;
-                        flex-wrap: wrap;
-
-                        .inner-right{
-
+                        width: 100%;
+                        flex-direction: column;
+                        
+                        .input-div{
                             display: flex;
-                            width: 40%;
-                            flex-direction: column;
-                            margin: 1em;
+                            flex-wrap: wrap;
+                        }
 
+                        .btn-div{
+                            display: flex;
+                            justify-content: center;
 
-                            label{
-                                color: rgba(0, 0, 0, 0.5);
-                                font-weight: 700;
-                                margin-bottom: .5em;
-                            }
-    
-                            input{
-                                color: rgba(211, 211, 211, 0.678);
-                                font-weight: 600;
+                            .btn{
                                 border: none;
-                                padding-bottom: .4em;
-                                border-bottom: 2px solid rgba(211, 211, 211, 0.65);
+                                background-color: teal;
+                                color: white;
+                                width: 8rem;
+                                height: min-content;
+                                padding: .5rem 1rem;
                             }
 
                         }
+
 
                     }
                 }
