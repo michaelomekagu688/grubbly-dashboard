@@ -9,7 +9,9 @@ import { Link } from 'react-router-dom';
 function sidebar(){
     return(
         <div className='sidebar' >
-            <div className='logo'> Grubbly </div>
+            <Link className='link' to={'/'}>
+                <div className='logo'> Grubbly </div>
+            </Link>
             <hr />
             <div className='listss'>
                 <ul>
