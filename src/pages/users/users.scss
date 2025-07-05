@@ -21,7 +21,7 @@
                     flex: 1;
                      -webkit-box-shadow: 2px 4px 10px 1px rgba(0, 0, 0, 0.47);
                     box-shadow: 2px 4px 10px 1px rgba(201, 201, 201, 0.47);
-                    padding: 1.5em 3em;
+                    padding: 1em 3em;
                     justify-content: space-between;
                     margin: 1em 2em;
                     gap: 1rem;
@@ -43,7 +43,7 @@
                               border-radius: 0 0 0 .6rem;
                               font-weight: 600;
                               padding: .5em;
-                              top: -1.5rem;
+                              top: -1rem;
                               right: -3rem;
                               background-color: rgba(240, 128, 128, 0.135);
                         }
@@ -57,7 +57,7 @@
 
                         .inners{
                             display: flex;
-                            gap: 1.1rem;
+                            gap: .8rem;
                             flex-direction: column;
                             
                             h2{
@@ -65,7 +65,7 @@
                             }
                             
                             div{
-                                font-size: 1rem;
+                                font-size: .9rem;
                                 color: rgb(132, 128, 128);
     
                             }
@@ -74,6 +74,7 @@
                         .beauty-img{
                             height: 5rem;
                             width: auto;
+                            margin-right: 1em;
                             border-radius: 50%;
                         }
 

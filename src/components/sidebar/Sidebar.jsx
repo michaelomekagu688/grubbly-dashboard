@@ -3,6 +3,7 @@
 import React from 'react'
 import { AccountCircleTwoTone, AirportShuttle, Dashboard, ExitToAppOutlined, HealthAndSafetyOutlined, NotificationsNoneOutlined, Payment, PermIdentity, ProductionQuantityLimits, PsychologyAltOutlined, QueryStatsOutlined, SettingsOutlined } from '@mui/icons-material';
 import './sidebar.scss'
+import { Link } from 'react-router-dom';
 
 
 function sidebar(){
@@ -13,32 +14,43 @@ function sidebar(){
             <div className='listss'>
                 <ul>
                     <p> MAIN  </p>
-                    <li>
-                        <Dashboard className='icons' />
-                        <span> Dashboard </span>
-                    </li>
+                    <Link className='link' to={"/"}>
+                        <li>
+                            <Dashboard className='icons' />
+                            <span> Dashboard </span>
+                        </li>
+                    </Link>
                     <p> LISTS </p>
-                    <li>
-                        <PermIdentity className='icons' />
-                        <span> Users </span>
-                    </li>
-                    <li>
-                        <ProductionQuantityLimits className='icons' />
-                        <span> Products </span>
-                    </li>
-                    <li>
-                        <Payment className='icons' />
-                        <span> Orders </span>
-                    </li>
+                    <Link className='link' to={"/input"}>
+                        <li>
+                            <PermIdentity className='icons' />
+                            <span> Users </span>
+                        </li>
+                    
+                    </Link>
+                    <Link to={"/product"} className='link'>
+                        <li>
+                            <ProductionQuantityLimits className='icons' />
+                            <span> Products </span>
+                        </li>
+                    </Link>
+                    <Link to={"/new"} className='link'>
+                        <li>
+                            <Payment className='icons' />
+                            <span> Orders </span>
+                        </li>
+                    </Link>
                     <li>
                         <AirportShuttle className='icons' />
                         <span> Delivery </span>
                     </li>
                      <p> USEFUL </p>
-                    <li>
-                        <QueryStatsOutlined className='icons' />
-                        <span> Stats </span>
-                    </li>
+                    <Link to={"/users"} className='link'>
+                        <li>
+                            <QueryStatsOutlined className='icons' />
+                            <span> Stats </span>
+                        </li>
+                     </Link>
                     <li>
                         <NotificationsNoneOutlined className='icons' />
                         <span> Notifications </span>
