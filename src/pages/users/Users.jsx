@@ -4,11 +4,21 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import './users.scss'
 import Charts from '../../components/charts/Charts'
 import Tables from '../../components/table/Tables'
+import { Box } from '@mui/material'
+import Smallside from '../../components/Smallside/Smallside'
 
 const Users = () => {
     return (
         <div className="users"> 
             <Sidebar />
+             <Box sx={{
+                display: {
+                    xs:"block",
+                    md:"none",
+                }
+            }}>
+                <Smallside />
+            </Box>
             <div className="users-cont">
                 <Navbar/>
                 <div className='first-cont'> 

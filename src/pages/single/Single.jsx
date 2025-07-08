@@ -4,6 +4,8 @@ import Sidebar from '../../components/sidebar/Sidebar'
 import Navbar from "../../components/navbar/Navbar";
 import { AddAPhoto } from "@mui/icons-material"
 import Input from "../../components/inputs/Input";
+import { Box } from "@mui/material";
+import Smallside from "../../components/Smallside/Smallside";
 
 function Single({input,titles}){
 
@@ -13,6 +15,14 @@ function Single({input,titles}){
         <div className="single"> 
             <div className="single-cont">
                 <Sidebar />
+                 <Box sx={{
+                                display: {
+                                    xs:"block",
+                                    md:"none",
+                                }
+                            }}>
+                                <Smallside />
+                            </Box>
                 <div className="single-wrapper">
                     <Navbar />
                     <div className="single-sec">

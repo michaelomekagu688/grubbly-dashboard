@@ -1,0 +1,66 @@
+
+
+.smallside-cont{
+    width: 60px;
+    position: fixed;
+    border-right: 0.3px solid rgb(230, 237,277);
+    height: 100%;
+
+    .names{
+        color: lightcoral;
+        margin-top: 1em;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-size: 1.2rem;
+        font-weight: 700;
+
+        *>{
+            text-align: center;
+        }
+    }
+
+    ul{
+        padding: 1em;
+        list-style: none;
+        align-items: start;
+        gap: 1rem;
+        display: flex;
+        flex-direction: column;
+
+
+        .link{
+            text-decoration: none;
+            color: inherit;
+        }
+
+        li{
+            display: flex;
+            align-items: center;
+            justify-content: start;
+            width: 100%;
+            padding: .3em .6em;
+            gap: .5rem;
+            transition: all .2s;
+
+            &:hover{
+                background-color: rgb(243, 238, 238);
+                font-size: .9rem;
+
+            }
+
+            .icons{
+                color: lightcoral;
+            }
+        }
+        p{
+            margin-top: 1em;
+            margin-bottom: .2em;
+            font-size: .9rem;
+            font-weight: 600;
+            color: darkgray;
+        }
+    }
+
+}
+       

@@ -8,6 +8,7 @@ import Single from './pages/single/Single'
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Users from './pages/users/Users';
 import { InputValue, ProductValue } from './SingleDataSource';
+import Smallside from './components/Smallside/Smallside';
 
 function App() {
   return (
@@ -16,7 +17,7 @@ function App() {
         <Routes>
           <Route path='/'>
             <Route index element={<Home />} />
-            <Route path='login' element={<Login />} />
+            <Route path='smallside' element={<Smallside />} />
             <Route path='new' element={<New />} />
             <Route path='users' element={<Users />} />
             <Route path='input' element={<Single input={InputValue} titles={"Add New User"} />} />

@@ -5,6 +5,8 @@ import './new.scss'
 import Navbar from "../../components/navbar/Navbar";
 import { DataGrid} from '@mui/x-data-grid';
 import Paper from '@mui/material/Paper';
+import { Box } from "@mui/material";
+import Smallside from "../../components/Smallside/Smallside";
 
 
 
@@ -34,7 +36,7 @@ const columns  = [
     headerName: 'Full name',
     description: 'This column has a value getter and is not sortable.',
     sortable: false,
-    width: 200,
+    width: 180,
     renderCell: (params) => {
         return(
             <div className="img-wrapper">
@@ -47,12 +49,12 @@ const columns  = [
         )
     }
   },
-  { field: 'Email', headerName: 'Email', width: 200 },
-  { field: 'age', headerName: 'Age', width: 50 },
+  { field: 'Email', headerName: 'Email', width: 150 },
+  { field: 'age', headerName: 'Age', width: 30 },
   {
     field: 'Status',
     headerName: 'Status',
-    width: 80,
+    width: 50,
      renderCell: (evs) => {
         return(
             <div className="ics-wrapper">
@@ -64,7 +66,7 @@ const columns  = [
   {
     field: 'Extra',
     headerName: 'Extra',
-    width: 200,
+    width: 180,
      renderCell: (extra) => {
         return(
             <div className="extra-wrapper">
@@ -87,6 +89,14 @@ function Login(){
     return(
         <div className="new"> 
             <Sidebar />
+             <Box sx={{
+                            display: {
+                                xs:"block",
+                                md:"none",
+                            }
+                        }}>
+                            <Smallside />
+                        </Box>
             <div className="new-cont">
                 <Navbar/>
                 <div className="id-sec"> 
