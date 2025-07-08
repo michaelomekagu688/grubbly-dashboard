@@ -64,3 +64,18 @@
         }
     }
 }
+
+@media(max-width:750px){
+    .navbar-cont{
+        height: 3.2rem;
+
+        .first-div{
+            height: 2rem;
+
+        }
+
+        .second-div{
+            gap: .1rem;
+        }
+    }
+}
