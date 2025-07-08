@@ -1,17 +1,51 @@
 
 .home{
     display: flex;
+    height: 100vh;
 
     .homeContainer{
         flex: 6;
+        height: 100%;
+        margin-left: 200px;
 
         .widget-cont,
         .fnc{
             display: flex;
             padding: 1em;
             justify-content: space-between;
+            flex-wrap: wrap;
             gap: 1rem;
            
         }
     }
+}
+
+@media(max-width:960px){
+    .home{
+
+        .homeContainer{
+            margin-left: 0;
+
+        }
+    }
+}
+
+@media(max-width:750px){
+    .home{
+
+        .homeContainer{
+
+            .widget-cont{
+                flex-direction: column;
+            }
+
+
+            .fnc{
+                flex-direction: column;
+                margin: 1em 2em;
+        
+            }
+        }
+    }
+
 }

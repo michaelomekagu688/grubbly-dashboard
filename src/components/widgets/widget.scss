@@ -80,3 +80,41 @@
         }
     }
 }
+
+@media(max-width:750px){
+    .widget{
+
+        .left{
+
+            :nth-child(1){
+                font-size: 1.1rem;
+            }
+            :nth-child(2){
+                font-size: 2.2rem;
+            }
+            :nth-child(3){
+                font-size: 1.1rem;
+            }
+        }
+
+        .right{
+
+            .prim{
+
+                :nth-child(1){
+                    font-size: 1.6rem;
+                }
+                :nth-child(2){
+                    font-size: 1.3rem;
+                }
+            }
+
+            .icon-2-1,
+            .icon-2-2,
+            .icon-2-3,
+            .icon-2-4{
+                font-size: 2rem;
+            }
+        }
+    }
+}

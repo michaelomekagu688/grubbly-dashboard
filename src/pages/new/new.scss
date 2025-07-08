@@ -6,6 +6,7 @@
     .new-cont{
         display: flex;
         flex-direction: column;
+        margin-left: 200px;
         flex: 6;
 
         .id-sec{
@@ -75,6 +76,16 @@
                 }
 
             }
+
+        }
+    }
+}
+
+@media(max-width:960px){
+    .new{
+
+        .new-cont{
+            margin-left: 0;
 
         }
     }
