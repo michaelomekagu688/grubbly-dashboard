@@ -35,6 +35,7 @@ function Single({input,titles}){
                                 <div className="input-div">
                                     <Input input={input} />
                                 </div>
+                                
                                 <div className="btn-div">
                                     <button className="btn"> send </button>
                                 </div>
