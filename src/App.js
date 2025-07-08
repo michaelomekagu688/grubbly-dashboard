@@ -3,7 +3,6 @@ import Home from './pages/home/Home'
 import New from './pages/new/New'
 import Single from './pages/single/Single'
 
-
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Users from './pages/users/Users';
 import { InputValue, ProductValue } from './SingleDataSource';
